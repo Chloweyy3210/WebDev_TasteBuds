@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiries | Taste Buds Catering</title>
+  <meta name="description" content="Send an event enquiry to find local caterers and food trucks, or apply to become a Taste Buds Catering vendor.">
+  <link rel="icon" href="_images/Pink and Brown Minimalist Pastry Chef Logo (1).png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <img src="_images/Pink and Brown Minimalist Pastry Chef Logo (1).png" alt="Taste Buds Catering logo">
+        <span class="brand-word"><br>Taste Buds, <small>Catering &amp; Food Trucks</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiries.html" aria-current="page">Enquiries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb">Enquiries</p>
+        <h1>Tell us what you need. We'll do the matching.</h1>
+        <p>Planning an event, or running a food business that wants more bookings? Pick the form below — it takes about two minutes.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="tabs" role="tablist" aria-label="Enquiry type">
+          <button class="tab-btn" data-tab="event" role="tab" aria-selected="true">Plan an event</button>
+        </div>
+
+        <!-- ============ EVENT ENQUIRY ============ -->
+        <div id="event" class="tab-panel active">
+          <div class="two-col">
+            <div class="form-card">
+              <h2 style="font-size:1.6rem;">Plan an event</h2>
+              <p>Tell us about your event and we'll help connect you with vendors who fit your date, budget and guest count.</p>
+              <form data-form="event enquiry" novalidate>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="ev-name">Full name</label>
+                    <input type="text" id="ev-name" name="name" required>
+                  </div>
+                  <div class="field">
+                    <label for="ev-email">Email address</label>
+                    <input type="email" id="ev-email" name="email" required>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="ev-phone">Phone number</label>
+                    <input type="tel" id="ev-phone" name="phone" required>
+                  </div>
+                  <div class="field">
+                    <label for="ev-date">Event date</label>
+                    <input type="date" id="ev-date" name="date" required>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="ev-type">Event type</label>
+                    <select id="ev-type" name="event_type" required>
+                      <option value="">Select an event type</option>
+                      <option>Wedding</option>
+                      <option>Corporate function</option>
+                      <option>Birthday party</option>
+                      <option>Community market</option>
+                      <option>Private dinner</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="ev-guests">Estimated guest count</label>
+                    <input type="number" id="ev-guests" name="guests" min="1" required>
+                  </div>
+                </div>
+                <fieldset class="field">
+                  <label>Budget range per person</label>
+                  <div class="radio-row">
+                    <label><input type="radio" name="budget" value="under-100" required> Under R100</label>
+                    <label><input type="radio" name="budget" value="100-250"> R100 – R250</label>
+                    <label><input type="radio" name="budget" value="250-plus"> R250+</label>
+                  </div>
+                </fieldset>
+                <div class="field">
+                  <label for="ev-message">Tell us more</label>
+                  <textarea id="ev-message" name="message" placeholder="Cuisine preferences, dietary requirements, venue, anything else we should know..."></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send enquiry</button>
+                <div class="form-msg" role="status"></div>
+              </form>
+            </div>
+            <div>
+              <p class="eyebrow">What happens next</p>
+              <h3>We match you with 2–3 vendors</h3>
+              <p>A host support coordinator reviews your enquiry and shares it with vendors who match your event type, area and budget. You'll hear back from us — and directly from interested vendors — within one business day.</p>
+              <h3>No obligation</h3>
+              <p>Getting a quote never commits you to booking. Compare before deciding.</p>
+            </div>
+          </div>
+        </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" style="color:#FBF3E7;">
+            <img src="_images/Pink and Brown Minimalist Pastry Chef Logo (1).png" alt="Taste Buds Catering logo">
+            <span class="brand-word">Taste Buds</span>
+          </a>
+          <p>The local marketplace connecting hungry hosts with independent caterers and food trucks.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="enquiries.html">Send an enquiry</a></li>
+            <li><a href="contact.html">Contact &amp; locations</a></li>
+            <li><a href="enquiries.html#vendor">Join as a vendor</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow along</h4>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span class="current-year">2026</span> Taste Buds Catering. All rights reserved.</span>
+        <span>Johannesburg · Cape Town</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js_assets/script.js"></script>
+</body>
+</html>
