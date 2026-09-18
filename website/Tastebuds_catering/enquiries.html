@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enquiries | Taste Buds Catering</title>
   <meta name="description" content="Send an event enquiry to find local caterers and food trucks, or apply to become a Taste Buds Catering vendor.">
-  <link rel="icon" href="_images/Pink and Brown Minimalist Pastry Chef Logo (1).png" type="image/png">
+  <link rel="icon" href="images/Pink and Brown Minimalist Pastry Chef Logo (1).png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="css_assets/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css_assets/myfirststyles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -15,8 +16,8 @@
   <header class="site-header">
     <nav class="nav wrap" aria-label="Primary">
       <a class="brand" href="index.html">
-        <img src="_images/Pink and Brown Minimalist Pastry Chef Logo (1).png" alt="Taste Buds Catering logo">
-        <span class="brand-word"><br>Taste Buds, <small>Catering &amp; Food Trucks</small></span>
+        <img src="images/Pink and Brown Minimalist Pastry Chef Logo (1).png" alt="Taste Buds Catering logo">
+        <span class="brand-word">Taste Buds<small>Catering &amp; Food Trucks</small></span>
       </a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
@@ -27,7 +28,6 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="enquiries.html" aria-current="page">Enquiries</a></li>
         <li><a href="contact.html">Contact</a></li>
-        
       </ul>
     </nav>
   </header>
@@ -46,13 +46,14 @@
       <div class="wrap">
         <div class="tabs" role="tablist" aria-label="Enquiry type">
           <button class="tab-btn" data-tab="event" role="tab" aria-selected="true">Plan an event</button>
+          <button class="tab-btn" data-tab="vendor" role="tab" aria-selected="false">Become a vendor</button>
         </div>
 
-        <!-- ============ EVENT ENQUIRY ============ -->
+        <!-- Event enquiry -->
         <div id="event" class="tab-panel active">
           <div class="two-col">
             <div class="form-card">
-              <h2 style="font-size:1.6rem;">Plan an event</h2>
+              <h2>Plan an event</h2>
               <p>Tell us about your event and we'll help connect you with vendors who fit your date, budget and guest count.</p>
               <form data-form="event enquiry" novalidate>
                 <div class="field-row">
@@ -119,14 +120,78 @@
           </div>
         </div>
 
+        <!-- Vendor enquiry -->
+        <div id="vendor" class="tab-panel">
+          <div class="two-col">
+            <div class="form-card">
+              <h2>Become a vendor</h2>
+              <p>Tell us about your food business and we'll help you set up a profile that gets you found and booked.</p>
+              <form data-form="vendor application" novalidate>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="v-business">Business name</label>
+                    <input type="text" id="v-business" name="business_name" required>
+                  </div>
+                  <div class="field">
+                    <label for="v-name">Contact name</label>
+                    <input type="text" id="v-name" name="name" required>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="v-email">Email address</label>
+                    <input type="email" id="v-email" name="email" required>
+                  </div>
+                  <div class="field">
+                    <label for="v-phone">Phone number</label>
+                    <input type="tel" id="v-phone" name="phone" required>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="v-category">Category</label>
+                    <select id="v-category" name="category" required>
+                      <option value="">Select a category</option>
+                      <option>Food truck</option>
+                      <option>Full-service catering</option>
+                      <option>Desserts &amp; bakery</option>
+                      <option>Beverage bar</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="v-city">City</label>
+                    <input type="text" id="v-city" name="city" required>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="v-message">Tell us about your food</label>
+                  <textarea id="v-message" name="message" placeholder="Cuisine, typical menu, usual event sizes, anything else we should know..."></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Apply as a vendor</button>
+                <div class="form-msg" role="status"></div>
+              </form>
+            </div>
+            <div>
+              <p class="eyebrow">What happens next</p>
+              <h3>We review within two business days</h3>
+              <p>Our vendor relations team checks your details and reaches out to help set up your profile — menu, photos, pricing and availability.</p>
+              <h3>Then you start getting found</h3>
+              <p>Once live, hosts searching by cuisine, area and event type can find and message you directly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="index.html" style="color:#FBF3E7;">
-            <img src="_images/Pink and Brown Minimalist Pastry Chef Logo (1).png" alt="Taste Buds Catering logo">
+          <a class="brand" href="index.html">
+            <img src="images/Pink and Brown Minimalist Pastry Chef Logo (1).png" alt="Taste Buds Catering logo">
             <span class="brand-word">Taste Buds</span>
           </a>
           <p>The local marketplace connecting hungry hosts with independent caterers and food trucks.</p>
